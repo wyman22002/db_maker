@@ -6,8 +6,8 @@ def home(request):
     return render(request, 'db_app/home.html')
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'db_app/about.html')
 
 def todos(request):
     items = TODOItem.objects.all()
-    return render(request, 'todos.html', {'todos': items})
+    return render(request, 'db_app/todos.html', {'todos': items})
